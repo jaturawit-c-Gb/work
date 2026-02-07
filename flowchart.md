@@ -3,16 +3,16 @@
 ```mermaid
 flowchart TD
     Start([เริ่มต้น])
-    Login["🔑 Admin Login"]
-    Firebase["🔐 ตรวจสอบตัวตนด้วย Firebase"]
+    Login["Admin Login"]
+    Firebase["ตรวจสอบตัวตนด้วย Firebase"]
     Decision{เข้าสู่ระบบสำเร็จ?}
-    Error["❌ แสดงข้อความผิดพลาด"]
+    Error["แสดงข้อความผิดพลาด"]
     End1([สิ้นสุด])
-    Dashboard["📊 แสดง Dashboard"]
-    Manage["⚙️ จัดการข้อมูลครุภัณฑ์"]
-    ReadWrite["💾 บันทึก / อ่านข้อมูล"]
-    Firestore[(☁️ Cloud Firestore)]
-    Display["📈 แสดงผลข้อมูล"]
+    Dashboard["แสดง Dashboard"]
+    Manage["จัดการข้อมูลครุภัณฑ์"]
+    ReadWrite["บันทึก / อ่านข้อมูล"]
+    Firestore[("Cloud Firestore")]
+    Display["แสดงผลข้อมูล"]
     End2([สิ้นสุด])
     
     Start --> Login
@@ -27,10 +27,16 @@ flowchart TD
     Firestore --> Display
     Display --> End2
     
-    style Start fill:#90EE90
-    style End1 fill:#FFB6C6
-    style End2 fill:#FFB6C6
-    style Firebase fill:#87CEEB
-    style Firestore fill:#FFD700
-    style Decision fill:#FFE4B5
+    style Start fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style End1 fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style End2 fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style Login fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style Firebase fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style Decision fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style Error fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style Dashboard fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style Manage fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style ReadWrite fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style Firestore fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    style Display fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
 ```
