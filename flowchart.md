@@ -32,23 +32,3 @@ usecaseDiagram
     UC8 ..> UC1 : include
     UC9 ..> UC1 : include
 ```
-
-    Admin --> UC1
-    Admin --> UC2
-    Admin --> UC3
-    Admin --> UC4
-    Admin --> UC5
-    Admin --> UC6
-    Admin --> UC7
-    Admin --> UC8
-    Admin --> UC9
-
-    UC2 ..> UC1 : <<include>>
-    UC3 ..> UC1 : <<include>>
-    UC4 ..> UC1 : <<include>>
-    UC5 ..> UC1 : <<include>>
-    UC6 ..> UC1 : <<include>>
-    UC7 ..> UC1 : <<include>>
-    UC8 ..> UC1 : <<include>>
-    UC9 ..> UC1 : <<include>>
-```
